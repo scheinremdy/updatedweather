@@ -1,0 +1,118 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body background and layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #42a5f5, #6a1b9a); /* Gradient from blue to purple */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+}
+
+/* Weather card container */
+.weather-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    width: 350px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Title styling */
+h1 {
+    font-size: 2.5em;
+    color: #3a3a3a;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Form input and button styling */
+form {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 12px;
+    font-size: 16px;
+    width: 70%;
+    margin-right: 10px;
+    border-radius: 8px;
+    border: 2px solid #42a5f5;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #6a1b9a;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #42a5f5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #6a1b9a;
+}
+
+/* Weather info display */
+#weather-display {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Error message styling */
+#error-message {
+    color: #ff1744;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Styling for weather info sections */
+#city-name {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#weather-description {
+    font-size: 1.3em;
+    margin: 10px 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+span {
+    font-weight: bold;
+}
+
+/* Animation for fading in the weather container */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
